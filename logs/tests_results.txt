@@ -1,0 +1,34 @@
+test_anagram (__main__.TestExercice) ... ERROR
+test_doubles (__main__.TestExercice) ... ok
+test_frequence (__main__.TestExercice) ... ok
+test_grades (__main__.TestExercice) ... ok
+test_order (__main__.TestExercice) ... ERROR
+
+======================================================================
+ERROR: test_anagram (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 35, in test_anagram
+    output = [exercice.anagrams(v) for v in words]
+  File "test_exercice.py", line 35, in <listcomp>
+    output = [exercice.anagrams(v) for v in words]
+  File "/home/runner/work/c04-ch6-exercices-bASILgIL/c04-ch6-exercices-bASILgIL/exercice.py", line 22, in anagrams
+    return sorted(mots[0]) == sorted(mots[1])
+UnboundLocalError: local variable 'mots' referenced before assignment
+
+======================================================================
+ERROR: test_order (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 19, in test_order
+    output = [exercice.order(v) for v in values]
+  File "test_exercice.py", line 19, in <listcomp>
+    output = [exercice.order(v) for v in values]
+  File "/home/runner/work/c04-ch6-exercices-bASILgIL/c04-ch6-exercices-bASILgIL/exercice.py", line 12, in order
+    return sorted_list
+UnboundLocalError: local variable 'sorted_list' referenced before assignment
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=2)
