@@ -42,13 +42,15 @@ def best_grades(student_grades: dict) -> dict:
 def frequence(sentence: str) -> dict:
     # TODO: Afficher les lettres les plus fréquentes
     #       Retourner le tableau de lettres
+    sentence.replace(" ", "")
     frequency = dict()
     for letter in sentence:
         frequency[letter] = sentence.count(letter)
-        sorted_keys = sorted(frequency, key=frequency.__getitem__, reverse=True)
-        for key in sorted_keys:
-            if frequency[key] > 5:
-                print(f"Le caractere {key} revient {frequency[key]} fois.")
+    sorted_keys = sorted(frequency, key=frequency.__getitem__, reverse=True)
+    for key in sorted_keys:
+        if frequency[key] > 5:
+            print(f"Le caractere {key} revient {frequency[key]} fois.")
+
     return frequency
 
 
