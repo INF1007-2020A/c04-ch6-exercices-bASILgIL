@@ -73,7 +73,6 @@ def print_recipe(ingredients) -> None:
 
 
 
-
 def main() -> None:
     print(f"On essaie d'ordonner les valeurs...")
     order()
